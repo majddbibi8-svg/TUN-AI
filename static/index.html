@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TUN AI — explore knowledge and ask AI anything.">
+<title>TUN AI — Your Knowledge. Your AI.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark">T</span><span>TUN<span class="brand-ai">AI</span></span></a>
+  <nav><a href="#explore" data-i="explore">Explore</a><a href="#assistant" data-i="assistant">AI Assistant</a><a href="#about" data-i="about">About</a></nav>
+  <div class="actions"><select id="language" aria-label="Language"><option value="en">EN</option><option value="fr">FR</option><option value="ar">AR</option></select><button id="theme" class="icon-btn" aria-label="Toggle theme">☼</button><button class="menu-btn" id="menu">☰</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="eyebrow"><span class="pulse"></span><span data-i="eyebrow">A NEW WAY TO DISCOVER KNOWLEDGE</span></div>
+  <h1 data-i="heroTitle">Curiosity has<br><span class="gradient">no limits.</span></h1>
+  <p class="hero-copy" data-i="heroCopy">Explore the world's knowledge and get clear answers with your AI companion.</p>
+  <div class="search-wrap"><span class="search-icon">⌕</span><input id="wikiInput" data-ph="searchPh" placeholder="Search any topic..." autocomplete="off"><button id="searchBtn" data-i="search">Search <span>→</span></button></div>
+  <div class="quick"><span data-i="popular">Popular:</span><button class="chip">Artificial intelligence</button><button class="chip">Solar System</button><button class="chip">Tunisia</button></div>
+</section>
+<section id="results" class="results hidden"><div class="section-head"><div><div class="eyebrow">DISCOVER</div><h2 data-i="resultsTitle">Search results</h2></div><span id="resultCount" class="muted"></span></div><div id="resultList" class="result-grid"></div></section>
+<section id="explore" class="section">
+  <div class="section-head"><div><div class="eyebrow" data-i="EXPLORE">EXPLORE</div><h2 data-i="exploreTitle">Knowledge, organized.</h2></div><p class="muted" data-i="exploreCopy">A universe of topics, one click away.</p></div>
+  <div class="category-grid">
+    <button class="category" data-query="Science"><span class="cat-icon">⚛</span><b data-i="science">Science</b><small data-i="scienceSub">Discover how the world works</small><span class="arrow">↗</span></button>
+    <button class="category" data-query="Technology"><span class="cat-icon">⌘</span><b data-i="technology">Technology</b><small data-i="technologySub">Ideas shaping tomorrow</small><span class="arrow">↗</span></button>
+    <button class="category" data-query="History"><span class="cat-icon">◷</span><b data-i="history">History</b><small data-i="historySub">Stories that shaped us</small><span class="arrow">↗</span></button>
+    <button class="category" data-query="Space"><span class="cat-icon">✧</span><b data-i="space">Space</b><small data-i="spaceSub">Beyond our planet</small><span class="arrow">↗</span></button>
+    <button class="category" data-query="Sports"><span class="cat-icon">⚽</span><b data-i="sports">Sports</b><small data-i="sportsSub">People, teams and records</small><span class="arrow">↗</span></button>
+    <button class="category" data-query="Tunisia"><span class="cat-icon">✺</span><b data-i="culture">Culture</b><small data-i="cultureSub">Places and traditions</small><span class="arrow">↗</span></button>
+  </div>
+</section>
+<section id="assistant" class="assistant-section">
+ <div class="assistant-card">
+  <div class="assistant-info"><div class="ai-orb">✳</div><div class="eyebrow" data-i="MEET">MEET YOUR AI</div><h2 data-i="askTitle">Big question?<br><span class="gradient">Ask TUN AI.</span></h2><p data-i="askCopy">Get explanations, explore ideas, and make complex topics easier to understand.</p><div class="feature-pills"><span>✦ <span data-i="clearAnswers">Clear answers</span></span><span>◉ <span data-i="multiLang">3 languages</span></span><span>⌁ <span data-i="openModel">Open models</span></span></div></div>
+  <div class="chat-box"><div class="chat-top"><div class="online-dot"></div><b>TUN AI</b><span class="muted" data-i="ready">Ready to help</span></div><div id="chatMessages" class="chat-messages"><div class="bubble bot" data-i="welcome">Hi! I'm TUN AI. What would you like to learn today?</div></div><form id="chatForm" class="chat-form"><textarea id="chatInput" rows="1" data-ph="askPh" placeholder="Ask me anything..."></textarea><button aria-label="Send">↑</button></form><div class="chat-note" data-i="note">AI can make mistakes. Verify important information.</div></div>
+ </div>
+</section>
+<section id="about" class="bottom-banner"><div><div class="eyebrow">TUN AI</div><h2 data-i="bottomTitle">Knowledge should be<br>for everyone.</h2></div><p data-i="bottomCopy">A smarter starting point for every curious mind.</p></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">T</span><span>TUN<span class="brand-ai">AI</span></span></a><span>© 2026 TUN AI · <span data-i="footer">Built for curious minds.</span></span><span class="muted">Knowledge • Discovery • AI</span></footer>
+<script src="/static/app.js"></script>
+</body></html>
